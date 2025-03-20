@@ -9,6 +9,10 @@ To compute the probability of `T2` being `High Risk`, we use the following appro
 ### 1️⃣ Compute Conditional Probabilities
 Using the training dataset, we estimate:
 
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore})" alt="Conditional Probability">
+</div>
+
 ![Conditional Probability](https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore}))
 
 by considering the patterns of `CreditScore` and `Age` in the existing `High Risk` and `Low Risk` samples.
