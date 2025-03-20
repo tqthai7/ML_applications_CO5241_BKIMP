@@ -13,14 +13,14 @@ Using the training dataset, we estimate:
     <img src="https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore})" alt="Conditional Probability">
 </div>
 
-![Conditional Probability](https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore}))
-
 by considering the patterns of `CreditScore` and `Age` in the existing `High Risk` and `Low Risk` samples.
 
 ### 2️⃣ Apply Bayesian Probability
 Since `Education` is missing, we marginalize over the possible values based on observed distributions:
 
-![Bayes Formula](https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore})=%20\frac{P(\text{Age},%20\text{CreditScore}%20|%20\text{High%20Risk})%20P(\text{High%20Risk})}{P(\text{Age},%20\text{CreditScore})})
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore})%20=%20\frac{P(\text{Age},%20\text{CreditScore}%20|%20\text{High%20Risk})%20P(\text{High%20Risk})}{P(\text{Age},%20\text{CreditScore})}" alt="Bayesian Probability">
+</div>
 
 We estimate probabilities from the training set by computing frequency-based likelihoods.
 
