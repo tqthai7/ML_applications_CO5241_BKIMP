@@ -9,7 +9,9 @@ To evaluate the effectiveness of this split, we follow these key steps:
 ### 1️⃣ Compute Parent Node Entropy
 Entropy measures the impurity of a dataset and is calculated using:
 
-![Entropy Formula](https://latex.codecogs.com/png.image?\dpi{110}H(S)=-\sum_{i=1}^{c}p_i\log_2(p_i))
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}H(S)=-\sum_{i=1}^{c}p_i\log_2(p_i)" alt="Entropy Formula">
+</div>
 
 where ![p_i](https://latex.codecogs.com/png.image?\dpi{110}p_i) represents the proportion of each class (High Risk or Low Risk).
 
@@ -19,14 +21,18 @@ where ![p_i](https://latex.codecogs.com/png.image?\dpi{110}p_i) represents the p
   - `CreditScore > 650`
 - Compute entropy for each subset using the same formula:
 
-![Subset Entropy Formula](https://latex.codecogs.com/png.image?\dpi{110}H(S_i)=-\sum_{j=1}^{c}p_j\log_2(p_j))
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}H(S_i)=-\sum_{j=1}^{c}p_j\log_2(p_j)" alt="Subset Entropy Formula">
+</div>
 
 where ![S_i](https://latex.codecogs.com/png.image?\dpi{110}S_i) represents each subset created by the split, and ![p_j](https://latex.codecogs.com/png.image?\dpi{110}p_j) denotes the proportion of class \( j \) in subset \( S_i \).
 
 ### 3️⃣ Calculate Information Gain (IG)
 Information Gain quantifies how much entropy is reduced after the split:
 
-![Information Gain Formula](https://latex.codecogs.com/png.image?\dpi{110}IG=H(S)-\sum_{i=1}^{k}\frac{|S_i|}{|S|}H(S_i))
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}IG=H(S)-\sum_{i=1}^{k}\frac{|S_i|}{|S|}H(S_i)" alt="Information Gain Formula">
+</div>
 
 where  
 - ![S_i](https://latex.codecogs.com/png.image?\dpi{110}S_i) represents each subset,  
