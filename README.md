@@ -55,6 +55,7 @@ repo-root/
 │   ├── 📄 summary_report.pdf   # High-level summary of findings
 │   ├── 📄 bias_analysis.pdf    # Bias detection and mitigation report
 │   ├── 📄 feature_importance.pdf # Feature analysis report
+│   └── ...
 │
 ├── 📂 cheat_sheets/           # Quick reference guides for key concepts
 │   ├── 📄 decision_trees_cheat_sheet.pdf
@@ -62,6 +63,7 @@ repo-root/
 │   ├── 📄 neural_networks_cheat_sheet.pdf
 │   ├── 📄 svm_knn_cheat_sheet.pdf
 │   ├── 📄 hmm_cheat_sheet.pdf
+│   └── ...
 ```
 
 ## 📝 Issues & Solutions
@@ -105,7 +107,7 @@ Each question corresponds to a **specific machine learning topic**, with a Jupyt
 ## ⚙️ How to Run
 1. Clone the repository:
    ```sh
-   git clone <repo-link>
+   git clone https://github.com/tqthai7/ML_applications_CO5241_BKIMP.git
    ```
 2. Install dependencies:
    ```sh
