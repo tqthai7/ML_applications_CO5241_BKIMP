@@ -5,38 +5,45 @@ In this task, we implement **batch gradient descent** to optimize the weights fo
 
 ## 🏗️ Methodology
 To find the optimal weights \( \theta_0 \) and \( \theta_1 \), we use the **Mean Squared Error (MSE) cost function**:
-\[
-J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (y_i - (\theta_0 + \theta_1 x_i))^2
-\]
+
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (y_i - (\theta_0 + \theta_1 x_i))^2" alt="MSE Cost Function">
+</div>
+
 where:
-- \( y_i \) is the actual `CreditScore`
-- \( x_i \) is `Age`
-- \( m \) is the number of training samples
-- \( \theta_0, \theta_1 \) are model parameters
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}y_i" alt="y_i"> is the actual `CreditScore`
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}x_i" alt="x_i"> is `Age`
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}m" alt="m"> is the number of training samples
+- <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_0" alt="theta_0">, <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_1" alt="theta_1"> are model parameters
 
 ### 1️⃣ Compute Partial Derivatives
 The gradients for the cost function are:
-\[
-\frac{\partial J}{\partial \theta_0} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)
-\]
-\[
-\frac{\partial J}{\partial \theta_1} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i) x_i
-\]
-where \( \hat{y}_i \) is the predicted `CreditScore`.
+
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}\frac{\partial J}{\partial \theta_0} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)" alt="Gradient w.r.t theta_0">
+</div>
+
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}\frac{\partial J}{\partial \theta_1} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i) x_i" alt="Gradient w.r.t theta_1">
+</div>
+
+where <img src="https://latex.codecogs.com/png.image?\dpi{110}\hat{y}_i" alt="y_hat_i"> is the predicted `CreditScore`.
 
 ### 2️⃣ Update Parameters
 Using **gradient descent**, the parameters are updated as follows:
-\[
-\theta_0^{(new)} = \theta_0 - \alpha \frac{\partial J}{\partial \theta_0}
-\]
-\[
-\theta_1^{(new)} = \theta_1 - \alpha \frac{\partial J}{\partial \theta_1}
-\]
-where \( \alpha = 0.01 \) is the learning rate.
+
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_0^{(new)} = \theta_0 - \alpha \frac{\partial J}{\partial \theta_0}" alt="Theta 0 Update">
+</div>
+
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_1^{(new)} = \theta_1 - \alpha \frac{\partial J}{\partial \theta_1}" alt="Theta 1 Update">
+</div>
+
+where <img src="https://latex.codecogs.com/png.image?\dpi{110}\alpha = 0.01" alt="alpha"> is the learning rate.
 
 ### 3️⃣ Interpret the Updates
 The direction of parameter updates indicates whether the model is moving towards a better fit. If the gradient is **positive**, the parameter is **decreased**; if it is **negative**, the parameter is **increased**.
 
 ## 📊 Expected Outcome
-By performing one iteration of gradient descent, we update \( \theta_0 \) and \( \theta_1 \), improving the model's ability to predict `CreditScore` based on `Age`.
-
+By performing one iteration of gradient descent, we update <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_0" alt="theta_0"> and <img src="https://latex.codecogs.com/png.image?\dpi{110}\theta_1" alt="theta_1">, improving the model's ability to predict `CreditScore` based on `Age`.
