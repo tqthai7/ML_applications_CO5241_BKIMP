@@ -9,22 +9,26 @@ To evaluate the effectiveness of this split, we follow these key steps:
 ### 1️⃣ Compute Parent Node Entropy
 Entropy measures the impurity of a dataset and is calculated using:
 
-![Entropy Formula](https://latex.codecogs.com/png.image?H(S)=-%5Csum_%7Bi=1%7D%5E%7Bc%7D%20p_i%20log_2(p_i))
+![Entropy Formula](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DH(S)=-%5Csum_%7Bi=1%7D%5E%7Bc%7D%20p_i%20%5Clog_2(p_i))
 
 where \( p_i \) represents the proportion of each class (High Risk or Low Risk).
 
 ### 2️⃣ Split Data and Compute Child Node Entropy
-- Divide the dataset into two groups:
+- Divide the dataset into two groups:  
   - `CreditScore ≤ 650`
   - `CreditScore > 650`
-- Compute entropy for each subset using the same formula.
+- Compute entropy for each subset using the same formula:
+
+![Subset Entropy Formula](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DH(S_i)=-%5Csum_%7Bj=1%7D%5E%7Bc%7D%20p_j%20%5Clog_2(p_j))
+
+where \( S_i \) represents each subset created by the split.
 
 ### 3️⃣ Calculate Information Gain (IG)
 Information Gain quantifies how much entropy is reduced after the split:
 
-![Information Gain Formula](https://latex.codecogs.com/png.image?IG=H(S)-%5Csum_%7Bi=1%7D%5E%7Bk%7D%20%5Cfrac%7B%7CS_i%7C%7D%7B%7CS%7C%7D%20H(S_i))
+![Information Gain Formula](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7DIG=H(S)-%5Csum_%7Bi=1%7D%5E%7Bk%7D%20%5Cfrac%7B%7CS_i%7C%7D%7B%7CS%7C%7D%20H(S_i))
 
-where \( S_i \) represents each subset created by the split.
+where \( S_i \) represents each subset, and \( |S_i| \) denotes the number of samples in subset \( S_i \).
 
 ### 4️⃣ Decision Analysis
 - **Higher IG** → The split is effective, making `CreditScore` a strong candidate for the root node.
