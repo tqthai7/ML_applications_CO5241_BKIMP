@@ -65,4 +65,5 @@ Each issue corresponds to a specific question, tracked with GitHub Issues. Contr
 
 ## ✍️ Author
 Full name: **Trần Quốc Thái**
+
 ID student: **2370759**
