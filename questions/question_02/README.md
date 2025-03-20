@@ -9,7 +9,9 @@ To assess the effectiveness of this split, we follow these key steps:
 ### 1️⃣ Compute the Variance of the Parent Node
 Variance measures the spread of values within the dataset and is calculated as:
 
-![Variance Formula](https://latex.codecogs.com/png.image?\dpi{110}Var(S)=\frac{1}{n}\sum_{i=1}^{n}(x_i-\bar{x})^2)
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}Var(S)=\frac{1}{n}\sum_{i=1}^{n}(x_i-\bar{x})^2" alt="Variance Formula">
+</div>
 
 where  
 - ![x_i](https://latex.codecogs.com/png.image?\dpi{110}x_i) are individual values of `CreditScore`,  
@@ -22,7 +24,9 @@ where
   - `Age > 35`
 - Compute variance for each subset using the same formula:
 
-![Subset Variance Formula](https://latex.codecogs.com/png.image?\dpi{110}Var(S_i)=\frac{1}{|S_i|}\sum_{j=1}^{|S_i|}(x_j-\bar{x_i})^2)
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}Var(S_i)=\frac{1}{|S_i|}\sum_{j=1}^{|S_i|}(x_j-\bar{x_i})^2" alt="Subset Variance Formula">
+</div>
 
 where  
 - ![S_i](https://latex.codecogs.com/png.image?\dpi{110}S_i) represents each subset created by the split,  
@@ -33,7 +37,9 @@ where
 ### 3️⃣ Calculate Variance Reduction
 Variance Reduction (VR) quantifies the effectiveness of a split and is calculated as:
 
-![Variance Reduction Formula](https://latex.codecogs.com/png.image?\dpi{110}VR=Var(S)-\sum_{i=1}^{k}\frac{|S_i|}{|S|}Var(S_i))
+<div align="center">
+    <img src="https://latex.codecogs.com/png.image?\dpi{110}VR=Var(S)-\sum_{i=1}^{k}\frac{|S_i|}{|S|}Var(S_i)" alt="Variance Reduction Formula">
+</div>
 
 where  
 - ![Var(S)](https://latex.codecogs.com/png.image?\dpi{110}Var(S)) is the variance of the parent node,  
