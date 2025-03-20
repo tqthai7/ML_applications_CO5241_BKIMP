@@ -4,50 +4,12 @@
 This repository contains a comprehensive analysis of loan risk prediction using various machine learning techniques. We explore decision trees, regression models, neural networks, SVMs, k-NN, and Hidden Markov Models, with detailed step-by-step explanations and implementations.
 
 ## 📂 Repository Structure
+A structured **folder architecture** ensures clear feature ownership, predictable module usage, and ease of maintenance.
+
 - `notebooks/` - Jupyter notebooks implementing solutions for each question
 - `cheat_sheets/` - A complete cheat sheet summarizing essential concepts, formulas, and methods
 - `reports/` - PDF files containing mathematical derivations and detailed explanations
 - `data/` - Training and test datasets for model evaluation
-├── 📂 data/                   # Contains all datasets
-│   ├── 📂 train/              # Raw, unprocessed training data
-│   ├── 📂 test/               # Cleaned and transformed test data
-├── questions/             # Jupyter notebooks and reports for each question  
-│   ├── question_1/  
-│   │   ├── notebook/      # Jupyter notebook for analysis  
-│   │   ├── report/        # PDF report with explanations & derivations  
-│   │   ├── models/        # Python implementation of the models  
-│   │   └── figures/       # Visualization plots, graphs, and outputs  
-│   ├── question_2/  
-│   │   ├── notebook/  
-│   │   ├── report/  
-│   │   ├── models/  
-│   │   └── figures/  
-│   ├── ...  
-│   ├── question_20/  
-│   │   ├── notebook/  
-│   │   ├── report/  
-│   │   ├── models/  
-│   │   └── figures/  
-│  
-├── cheat_sheets/          # Quick reference guides for ML concepts  
-│   ├── decision_trees.pdf  
-│   ├── regression.pdf  
-│   ├── neural_networks.pdf  
-│   ├── svm_knn.pdf  
-│   ├── hmm.pdf  
-│  
-├── requirements.txt       # List of dependencies  
-├── README.md              # Project documentation  
-└── .gitignore             # Ignore unnecessary files  
-
-
-# Loan Risk Prediction Analysis 🚀
-
-## 📌 Project Overview
-This repository contains a comprehensive analysis of **loan risk prediction** using various machine learning techniques. We explore **decision trees, regression models, neural networks, SVMs, k-NN, and Hidden Markov Models**, with step-by-step explanations, implementations, and performance evaluation.
-
-## 📂 Repository Structure
-A structured **folder architecture** ensures clear feature ownership, predictable module usage, and ease of maintenance.
 
 ```plaintext
 repo-root/
@@ -58,8 +20,6 @@ repo-root/
 ├── 📂 data/                   # Contains all datasets
 │   ├── 📂 train/              # Raw, unprocessed training data
 │   ├── 📂 test/               # Cleaned and transformed test data
-│   ├── 📂 external/           # Additional external datasets
-│   ├── 📄 sample.csv          # Example dataset file
 │
 ├── 📂 questions/              # Jupyter notebooks and reports for each question
 │   ├── 📂 question_01/        # Question 1: Decision Trees
@@ -67,18 +27,21 @@ repo-root/
 │   │   │   ├── 📄 decision_tree.ipynb
 │   │   ├── 📂 report/         # Detailed explanation and derivation
 │   │   │   ├── 📄 decision_tree_report.pdf
+│   │   └── 📂 figures
 │   │
 │   ├── 📂 question_02/        # Question 2: Regression Trees
 │   │   ├── 📂 notebook/       
 │   │   │   ├── 📄 regression_tree.ipynb
 │   │   ├── 📂 report/        
 │   │   │   ├── 📄 regression_tree_report.pdf
+│   │   └── 📂 figures
 │   │
 │   ├── 📂 question_03/        # Question 3: Handling Missing Values
 │   │   ├── 📂 notebook/       
 │   │   │   ├── 📄 missing_values.ipynb
 │   │   ├── 📂 report/        
 │   │   │   ├── 📄 missing_values_report.pdf
+│   │   └── 📂 figures
 │   │
 │   ├── ...                    # More questions follow the same structure
 │   ├── 📂 question_20/        # Question 20: Nonlinear Decision Boundaries
@@ -86,22 +49,8 @@ repo-root/
 │   │   │   ├── 📄 nonlinear_svm.ipynb
 │   │   ├── 📂 report/        
 │   │   │   ├── 📄 nonlinear_svm_report.pdf
-│
-├── 📂 src/                    # Source code for ML models
-│   ├── 📂 models/             # Implementation of different ML models
-│   │   ├── 📄 decision_tree.py
-│   │   ├── 📄 linear_regression.py
-│   │   ├── 📄 neural_network.py
-│   │   ├── 📄 svm_knn.py
-│   │   ├── 📄 hmm.py
-│   │   ├── 📄 evaluation.py
-│   │
-│   ├── 📂 utils/              # Utility functions (data processing, feature engineering)
-│   │   ├── 📄 data_loader.py
-│   │   ├── 📄 preprocessing.py
-│   │   ├── 📄 feature_engineering.py
-│   │   ├── 📄 visualization.py
-│
+│   │   └── 📂 figures
+│   
 ├── 📂 reports/                # Final reports and documentation
 │   ├── 📄 summary_report.pdf   # High-level summary of findings
 │   ├── 📄 bias_analysis.pdf    # Bias detection and mitigation report
@@ -113,14 +62,6 @@ repo-root/
 │   ├── 📄 neural_networks_cheat_sheet.pdf
 │   ├── 📄 svm_knn_cheat_sheet.pdf
 │   ├── 📄 hmm_cheat_sheet.pdf
-│
-├── 📂 tests/                  # Unit tests for all models and utilities
-│   ├── 📄 test_decision_tree.py
-│   ├── 📄 test_linear_regression.py
-│   ├── 📄 test_neural_network.py
-│   ├── 📄 test_svm_knn.py
-│   ├── 📄 test_hmm.py
-│   ├── 📄 test_evaluation.py
 ```
 
 ## 📝 Issues & Solutions
@@ -181,26 +122,3 @@ Each issue corresponds to a specific question, tracked via GitHub Issues. Contri
 ## ✍️ Author
 - **Trần Quốc Thái**  
 - **ID Student:** 2370759
-
-
-
-## ⚙️ How to Run
-1. Clone the repository:
-   ```sh
-   git clone <repo-link>
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Run Jupyter notebooks:
-   ```sh
-   jupyter notebook
-   ```
-
-## 🤝 Contribution
-Each issue corresponds to a specific question, tracked with GitHub Issues. Contributions, pull requests, and discussions are welcome!
-
-## ✍️ Author
-Full name: **Trần Quốc Thái**.
-ID student: **2370759**.
