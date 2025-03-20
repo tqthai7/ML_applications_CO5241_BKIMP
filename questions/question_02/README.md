@@ -8,10 +8,13 @@ To assess the effectiveness of this split, we follow these key steps:
 
 ### 1️⃣ Compute the Variance of the Parent Node
 Variance measures the spread of values within the dataset and is calculated as:
-\[
-Var(S) = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
-\]
-where \( x_i \) are individual values and \( \bar{x} \) is the mean of `CreditScore`.
+
+![Variance Formula](https://latex.codecogs.com/png.image?\dpi{110}Var(S)=\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2)
+
+where  
+- ![x_i](https://latex.codecogs.com/png.image?\dpi{110}x_i) are individual values,  
+- ![\bar{x}](https://latex.codecogs.com/png.image?\dpi{110}\bar{x}) is the mean of `CreditScore`,  
+- ![n](https://latex.codecogs.com/png.image?\dpi{110}n) is the number of samples.
 
 ### 2️⃣ Split Data and Compute Variance for Each Child Node
 - Divide the dataset into two groups:
@@ -21,10 +24,13 @@ where \( x_i \) are individual values and \( \bar{x} \) is the mean of `CreditSc
 
 ### 3️⃣ Calculate Variance Reduction
 Variance Reduction (VR) quantifies the effectiveness of a split and is calculated as:
-\[
-VR = Var(S) - \sum_{i=1}^{k} \frac{|S_i|}{|S|} Var(S_i)
-\]
-where \( S_i \) represents each subset created by the split.
+
+![Variance Reduction Formula](https://latex.codecogs.com/png.image?\dpi{110}VR=Var(S)-\sum_{i=1}^{k} \frac{|S_i|}{|S|} Var(S_i))
+
+where  
+- ![S_i](https://latex.codecogs.com/png.image?\dpi{110}S_i) represents each subset,  
+- ![|S_i|](https://latex.codecogs.com/png.image?\dpi{110}|S_i|) denotes the number of samples in subset \( S_i \),  
+- ![|S|](https://latex.codecogs.com/png.image?\dpi{110}|S|) is the total number of samples before the split.
 
 ### 4️⃣ Decision Analysis
 - **Higher VR** → The split significantly reduces variance, making `Age` a strong candidate for splitting.
@@ -36,4 +42,3 @@ where \( S_i \) represents each subset created by the split.
 
 ## 📊 Expected Outcome
 By computing VR, we determine if `Age = 35` is a meaningful split for a regression tree predicting `CreditScore`. If the VR is low, alternative splits should be explored.
-
