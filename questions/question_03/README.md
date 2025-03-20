@@ -8,16 +8,16 @@ To compute the probability of `T2` being `High Risk`, we use the following appro
 
 ### 1️⃣ Compute Conditional Probabilities
 Using the training dataset, we estimate:
-\[
-P(\text{High Risk} | \text{Age}, \text{CreditScore})
-\]
+
+![Conditional Probability](https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore}))
+
 by considering the patterns of `CreditScore` and `Age` in the existing `High Risk` and `Low Risk` samples.
 
 ### 2️⃣ Apply Bayesian Probability
 Since `Education` is missing, we marginalize over the possible values based on observed distributions:
-\[
-P(\text{High Risk} | \text{Age}, \text{CreditScore}) = \frac{P(\text{Age}, \text{CreditScore} | \text{High Risk}) P(\text{High Risk})}{P(\text{Age}, \text{CreditScore})}
-\]
+
+![Bayes Formula](https://latex.codecogs.com/png.image?\dpi{110}P(\text{High%20Risk}%20|%20\text{Age},%20\text{CreditScore})=%20\frac{P(\text{Age},%20\text{CreditScore}%20|%20\text{High%20Risk})%20P(\text{High%20Risk})}{P(\text{Age},%20\text{CreditScore})})
+
 We estimate probabilities from the training set by computing frequency-based likelihoods.
 
 ### 3️⃣ Handling Missing Values
