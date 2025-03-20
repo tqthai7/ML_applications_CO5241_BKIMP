@@ -9,6 +9,40 @@ This repository contains a comprehensive analysis of loan risk prediction using 
 - `reports/` - PDF files containing mathematical derivations and detailed explanations
 - `data/` - Training and test datasets for model evaluation
 
+├── data/                  # Contains all datasets  
+│   ├── train/             # Training datasets
+│   ├── test/              # Testing datasets
+│  
+├── questions/             # Jupyter notebooks and reports for each question  
+│   ├── question_1/  
+│   │   ├── notebook/      # Jupyter notebook for analysis  
+│   │   ├── report/        # PDF report with explanations & derivations  
+│   │   ├── models/        # Python implementation of the models  
+│   │   └── figures/       # Visualization plots, graphs, and outputs  
+│   ├── question_2/  
+│   │   ├── notebook/  
+│   │   ├── report/  
+│   │   ├── models/  
+│   │   └── figures/  
+│   ├── ...  
+│   ├── question_20/  
+│   │   ├── notebook/  
+│   │   ├── report/  
+│   │   ├── models/  
+│   │   └── figures/  
+│  
+├── cheat_sheets/          # Quick reference guides for ML concepts  
+│   ├── decision_trees.pdf  
+│   ├── regression.pdf  
+│   ├── neural_networks.pdf  
+│   ├── svm_knn.pdf  
+│   ├── hmm.pdf  
+│  
+├── requirements.txt       # List of dependencies  
+├── README.md              # Project documentation  
+└── .gitignore             # Ignore unnecessary files  
+
+
 ## 📝 Issues & Solutions
 ### 🌳 Decision Trees
 1. **Is CreditScore = 650 the Best Split?** - Calculating information gain for decision tree classification.
@@ -64,6 +98,5 @@ This repository contains a comprehensive analysis of loan risk prediction using 
 Each issue corresponds to a specific question, tracked with GitHub Issues. Contributions, pull requests, and discussions are welcome!
 
 ## ✍️ Author
-Full name: **Trần Quốc Thái**
-
-ID student: **2370759**
+Full name: **Trần Quốc Thái**.
+ID student: **2370759**.
