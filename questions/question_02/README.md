@@ -9,7 +9,7 @@ To assess the effectiveness of this split, we follow these key steps:
 ### 1️⃣ Compute the Variance of the Parent Node
 Variance measures the spread of values within the dataset and is calculated as:
 
-![Variance Formula](https://latex.codecogs.com/png.image?\dpi{110}Var(S)=\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2)
+![Variance Formula](https://latex.codecogs.com/png.image?\dpi{110}Var(S)=\frac{1}{n}\sum_{i=1}^{n} (x_i - \bar{x})^2)
 
 where  
 - ![x_i](https://latex.codecogs.com/png.image?\dpi{110}x_i) are individual values,  
