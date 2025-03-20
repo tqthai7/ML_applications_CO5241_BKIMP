@@ -1,0 +1,9 @@
+ID,Age,CreditScore,Education,RiskLevel
+1,35,720,16,Low
+2,28,650,14,High
+3,45,750,missing,Low
+4,31,600,12,High
+5,52,780,18,Low
+6,29,630,14,High
+7,42,710,16,Low
+8,33,640,12,High
