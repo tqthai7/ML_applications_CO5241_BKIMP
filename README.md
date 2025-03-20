@@ -64,5 +64,5 @@ This repository contains a comprehensive analysis of loan risk prediction using 
 Each issue corresponds to a specific question, tracked with GitHub Issues. Contributions, pull requests, and discussions are welcome!
 
 ## ✍️ Author
-Trần Quốc Thái
-ID student: 2370759
+Full name: **Trần Quốc Thái**
+ID student: **2370759**
