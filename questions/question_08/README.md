@@ -8,7 +8,9 @@ In this task, we compute the **gradient vector** for one step of gradient descen
 ### 1️⃣ Compute Gradient Vector
 The gradient for logistic regression is given by:
 
-![\nabla J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_i](https://latex.codecogs.com/svg.latex?\nabla%20J(\theta)%20=%20\frac{1}{m}%20\sum_{i=1}^{m}%20(\hat{y}_i%20-%20y_i)%20x_i)
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?%5Cnabla%20J(%5Ctheta)%20=%20%5Cfrac{1}{m}%20%5Csum_{i=1}^{m}%20(%5Chat{y}_i%20-%20y_i)%20x_i" alt="Gradient">
+</div>
 
 where:
 - ![\hat{y}_i](https://latex.codecogs.com/svg.latex?\hat{y}_i) is the predicted probability from the sigmoid function
@@ -18,14 +20,18 @@ where:
 
 Using the prediction from **Question 7**, we compute the gradient update for one iteration of **gradient descent**:
 
-![\theta_j = \theta_j - \alpha \nabla J(\theta)](https://latex.codecogs.com/svg.latex?\theta_j%20=%20\theta_j%20-%20\alpha%20\nabla%20J(\theta))
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\theta_j%20=%20\theta_j%20-%20\alpha%20\nabla%20J(\theta)" alt="Gradient Descent Update">
+</div>
 
 where ![\alpha](https://latex.codecogs.com/svg.latex?\alpha) is the learning rate.
 
 ### 2️⃣ Effect of Regularization
 Regularization modifies the gradient update to prevent overfitting:
 
-![\nabla J_{reg}(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_i + \lambda \theta](https://latex.codecogs.com/svg.latex?\nabla%20J_{reg}(\theta)%20=%20\frac{1}{m}%20\sum_{i=1}^{m}%20(\hat{y}_i%20-%20y_i)%20x_i%20+%20\lambda%20\theta)
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\nabla%20J_{reg}(\theta)%20=%20\frac{1}{m}%20\sum_{i=1}^{m}%20(\hat{y}_i%20-%20y_i)%20x_i%20+%20\lambda%20\theta" alt="Regularized Gradient">
+</div>
 
 where ![\lambda](https://latex.codecogs.com/svg.latex?\lambda) is the regularization parameter.
 
