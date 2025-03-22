@@ -10,7 +10,9 @@ In this task, we evaluate the performance of our **multiple linear regression mo
 ### 1️⃣ Compute Mean Squared Error (MSE)
 The MSE formula is:  
 
-![MSE = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2](https://latex.codecogs.com/svg.latex?MSE%20=%20\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i)^2)
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?MSE%20=%20\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i)^2" alt="MSE Formula">
+</div>
 
 where:  
 - ![y_i](https://latex.codecogs.com/svg.latex?y_i) is the actual `CreditScore`  
@@ -18,9 +20,11 @@ where:
 - ![m](https://latex.codecogs.com/svg.latex?m) is the number of training samples  
 
 ### 2️⃣ Compute R² Score
-The R² formula is:  
+The R² formula is:
 
-![R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}](https://latex.codecogs.com/svg.latex?R^2%20=%201%20-%20\frac{\sum%20(y_i%20-%20\hat{y}_i)^2}{\sum%20(y_i%20-%20\bar{y})^2})
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?R^2%20=%201%20-%20\frac{\sum%20(y_i%20-%20\hat{y}_i)^2}{\sum%20(y_i%20-%20\bar{y})^2}" alt="R² Formula">
+</div> 
 
 where:  
 - ![\bar{y}](https://latex.codecogs.com/svg.latex?\bar{y}) is the mean of `CreditScore`  
