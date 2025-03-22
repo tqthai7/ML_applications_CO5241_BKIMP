@@ -31,6 +31,7 @@ Where:
 Using Gaussian distribution for numerical features:
 <div align="center">
   <img src="https://latex.codecogs.com/svg.latex?P(X_i%20|%20Y)%20=%20\frac{1}{\sqrt{2\pi%20\sigma^2}}%20e^{- \frac{(X_i - \mu)^2}{2 \sigma^2}}" alt="Gaussian Likelihood">
+  <img src="https://latex.codecogs.com/svg.latex?P(X_i%20|%20Y)%20=%20\frac{1}{\sqrt{2\pi%20\sigma^2}}%20e^{- \frac{(X_i - \mu)^2}{2 \sigma^2}}" alt="Gaussian Likelihood">
 </div>
 
 Where \( \mu \) and \( \sigma \) are the mean and standard deviation of each feature per class.
