@@ -9,7 +9,7 @@ In this task, we apply **Naïve Bayes classification** to determine the risk lev
 ### 1️⃣ Naïve Bayes Classification
 Using Bayes' theorem:
 <div align="center"> 
-  img src="https://latex.codecogs.com/svg.latex?P(Y%20|%20X)%20=%20\frac{P(X%20|%20Y)%20P(Y)}{P(X)}" alt="Bayes' Theorem">
+  <img src="https://latex.codecogs.com/svg.latex?P(Y%20|%20X)%20=%20\frac{P(X%20|%20Y)%20P(Y)}{P(X)}" alt="Bayes' Theorem">
 </div>
 
 Where:
