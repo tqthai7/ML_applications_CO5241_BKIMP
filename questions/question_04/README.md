@@ -21,9 +21,13 @@ where:
 ### 1️⃣ Compute Partial Derivatives
 The gradients for the cost function are:
 
-![\frac{\partial J}{\partial \theta_0} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)](https://latex.codecogs.com/svg.latex?\frac{\partial%20J}{\partial%20\theta_0}%20=%20-\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i))
+<div align="center"> 
+    <img src="https://latex.codecogs.com/svg.latex?\frac{\partial%20J}{\partial%20\theta_0}%20=%20-\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i)" alt="Gradient theta_0"> 
+</div> 
 
-![\frac{\partial J}{\partial \theta_1} = -\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i) x_i](https://latex.codecogs.com/svg.latex?\frac{\partial%20J}{\partial%20\theta_1}%20=%20-\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i)%20x_i)
+<div align="center"> 
+    <img src="https://latex.codecogs.com/svg.latex?\frac{\partial%20J}{\partial%20\theta_1}%20=%20-\frac{1}{m}%20\sum_{i=1}^{m}%20(y_i%20-%20\hat{y}_i)%20x_i" alt="Gradient theta_1"> 
+</div>
 
 where ![\hat{y}_i](https://latex.codecogs.com/svg.latex?\hat{y}_i) is the predicted CreditScore.
 
@@ -32,9 +36,13 @@ where ![\hat{y}_i](https://latex.codecogs.com/svg.latex?\hat{y}_i) is the predic
 ### 2️⃣ Update Parameters
 Using **gradient descent**, the parameters are updated as follows:
 
-![\theta_0^{(new)} = \theta_0 - \alpha \frac{\partial J}{\partial \theta_0}](https://latex.codecogs.com/svg.latex?\theta_0^{(new)}%20=%20\theta_0%20-%20\alpha%20\frac{\partial%20J}{\partial%20\theta_0})
+<div align="center"> 
+    <img src="https://latex.codecogs.com/svg.latex?\theta_0^{(new)}%20=%20\theta_0%20-%20\alpha%20\frac{\partial%20J}{\partial%20\theta_0}" alt="Theta_0 update"> 
+</div> 
 
-![\theta_1^{(new)} = \theta_1 - \alpha \frac{\partial J}{\partial \theta_1}](https://latex.codecogs.com/svg.latex?\theta_1^{(new)}%20=%20\theta_1%20-%20\alpha%20\frac{\partial%20J}{\partial%20\theta_1})
+<div align="center"> 
+    <img src="https://latex.codecogs.com/svg.latex?\theta_1^{(new)}%20=%20\theta_1%20-%20\alpha%20\frac{\partial%20J}{\partial%20\theta_1}" alt="Theta_1 update"> 
+</div>
 
 where ![\alpha = 0.01](https://latex.codecogs.com/svg.latex?\alpha%20=%200.01) is the **learning rate**.
 
