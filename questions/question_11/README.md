@@ -20,11 +20,11 @@ Where:
 #### **Compute Priors**
 
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.latex?P(\text{Low%20Risk})%20=%20\frac{\#(\text{Low%20Risk})}{\text{Total%20Samples}}" alt="Prior Probability Low Risk">
+  <img src="https://latex.codecogs.com/svg.latex?P(\mathrm{Low\ Risk})%20=%20\frac{\mathrm{Count(Low\ Risk)}}{\mathrm{Total\ Samples}}" alt="Prior Probability Low Risk">
 </div>
 
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.latex?P(\text{High%20Risk})%20=%20\frac{\#(\text{High%20Risk})}{\text{Total%20Samples}}" alt="Prior Probability High Risk">
+  <img src="https://latex.codecogs.com/svg.latex?P(\mathrm{High\ Risk})%20=%20\frac{\mathrm{Count(High\ Risk)}}{\mathrm{Total\ Samples}}" alt="Prior Probability High Risk">
 </div>
 
 #### **Compute Likelihoods**
