@@ -56,9 +56,9 @@ Instead of assuming independence, we model XX using a multivariate normal distri
 
 Where:
 
-    ΣYΣY​ is the covariance matrix for features given class YY.
+ΣYΣY​ is the covariance matrix for features given class YY.
 
-    The dependency structure is captured in ΣYΣY​.
+The dependency structure is captured in ΣYΣY​.
 
 **Final Classification**
 
