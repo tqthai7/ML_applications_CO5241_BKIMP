@@ -18,6 +18,7 @@ Where:
 - **Assumption**: Features are conditionally independent
 
 #### **Compute Priors**
+
 <div align="center">
   <img src="https://latex.codecogs.com/svg.latex?P(\text{Low%20Risk})%20=%20\frac{\#(\text{Low%20Risk})}{\text{Total%20Samples}}" alt="Prior Probability Low Risk">
 </div>
