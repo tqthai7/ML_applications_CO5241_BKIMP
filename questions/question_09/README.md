@@ -8,7 +8,9 @@ In this task, we design a **perceptron model** to classify test case **T1**. We 
 ### 1️⃣ Perceptron Model
 A perceptron makes a classification decision using:
 
-![\hat{y} = \text{sign}(w \cdot x + b)](https://latex.codecogs.com/svg.latex?\hat{y}%20=%20\text{sign}(w%20\cdot%20x%20+%20b))
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\hat{y}%20=%20\text{sign}(w%20\cdot%20x%20+%20b)" alt="Perceptron Equation">
+</div>
 
 where:
 - ![w = [0.3, 0.4]](https://latex.codecogs.com/svg.latex?w%20=%20[0.3,%200.4]) (weight vector)
@@ -19,7 +21,9 @@ where:
 ### 2️⃣ Normalize Input Features
 Feature normalization ensures numerical stability and faster convergence. We use **min-max scaling**:
 
-![x' = \frac{x - x_{min}}{x_{max} - x_{min}}](https://latex.codecogs.com/svg.latex?x'%20=%20\frac{x%20-%20x_{min}}{x_{max}%20-%20x_{min}})
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?x'%20=%20\frac{x%20-%20x_{min}}{x_{max}%20-%20x_{min}}" alt="Min-Max Normalization">
+</div>
 
 Given test case **T1**:
 - Age = 37, CreditScore = 705
@@ -28,7 +32,9 @@ Given test case **T1**:
 ### 3️⃣ Compute Perceptron Output
 The perceptron computes:
 
-![z = w_1 \cdot x_1 + w_2 \cdot x_2 + b](https://latex.codecogs.com/svg.latex?z%20=%20w_1%20\cdot%20x_1%20+%20w_2%20\cdot%20x_2%20+%20b)
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?z%20=%20w_1%20\cdot%20x_1%20+%20w_2%20\cdot%20x_2%20+%20b" alt="Perceptron Output">
+</div>
 
 Applying the **sign function** determines the classification.
 
