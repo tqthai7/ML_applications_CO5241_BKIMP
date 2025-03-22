@@ -6,7 +6,9 @@ In this task, we implement **batch gradient descent** to optimize the weights fo
 ## 🏗️ Methodology
 To find the optimal weights ![\theta_0](https://latex.codecogs.com/svg.latex?\theta_0) and ![\theta_1](https://latex.codecogs.com/svg.latex?\theta_1), we use the **Mean Squared Error (MSE) cost function**:
 
-![J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (y_i - (\theta_0 + \theta_1 x_i))^2](https://latex.codecogs.com/svg.latex?J(\theta_0,%20\theta_1)%20=%20\frac{1}{2m}%20\sum_{i=1}^{m}%20(y_i%20-%20(\theta_0%20+%20\theta_1%20x_i))^2)
+<div align="center">
+    <img src="https://latex.codecogs.com/svg.latex?J(\theta_0,%20\theta_1)%20=%20\frac{1}{2m}%20\sum_{i=1}^{m}%20(y_i%20-%20(\theta_0%20+%20\theta_1%20x_i))^2" alt="MSE">
+</div>
 
 where:
 - ![y_i](https://latex.codecogs.com/svg.latex?y_i) is the actual **CreditScore**
